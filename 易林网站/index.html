@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>焦氏易林解卦</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <a href="QianYi.html" class="qianyi-btn">切换到签易</a>
+            <h1>焦氏易林解卦</h1>
+            <div class="divider">
+                <span class="line"></span>
+                <span class="subtitle">观象玩辞 · 穷理尽性</span>
+                <span class="line"></span>
+            </div>
+        </header>
+
+        <main class="main-content">
+            <div class="input-section">
+                <h2>起卦方式</h2>
+                <div class="tab-list">
+                    <button class="tab active" data-tab="manual">手动输入</button>
+                    <button class="tab" data-tab="number">数字起卦</button>
+                </div>
+
+                <div id="manual-tab" class="tab-content active">
+                    <div class="yao-list">
+                        <div class="yao-item" data-position="0">
+                            <span class="yao-label">上爻</span>
+                            <div class="yao-line" data-type="yang"></div>
+                            <button class="yao-btn">静爻</button>
+                        </div>
+                        <div class="yao-item" data-position="1">
+                            <span class="yao-label">五爻</span>
+                            <div class="yao-line" data-type="yang"></div>
+                            <button class="yao-btn">静爻</button>
+                        </div>
+                        <div class="yao-item" data-position="2">
+                            <span class="yao-label">四爻</span>
+                            <div class="yao-line" data-type="yang"></div>
+                            <button class="yao-btn">静爻</button>
+                        </div>
+                        <div class="yao-item" data-position="3">
+                            <span class="yao-label">三爻</span>
+                            <div class="yao-line" data-type="yang"></div>
+                            <button class="yao-btn">静爻</button>
+                        </div>
+                        <div class="yao-item" data-position="4">
+                            <span class="yao-label">二爻</span>
+                            <div class="yao-line" data-type="yang"></div>
+                            <button class="yao-btn">静爻</button>
+                        </div>
+                        <div class="yao-item" data-position="5">
+                            <span class="yao-label">初爻</span>
+                            <div class="yao-line" data-type="yang"></div>
+                            <button class="yao-btn">静爻</button>
+                        </div>
+                    </div>
+                    <button id="divine-btn" class="divine-btn">开始解卦</button>
+                    <div class="tips">
+                        <p>点击爻位切换阴阳爻</p>
+                        <p>点击右侧按钮设置动爻</p>
+                    </div>
+                </div>
+
+                <div id="number-tab" class="tab-content">
+                    <div class="number-inputs">
+                        <div class="input-group">
+                            <label>本卦数字</label>
+                            <input type="number" id="num1" placeholder="请输入">
+                        </div>
+                        <div class="input-group">
+                            <label>变卦数字</label>
+                            <input type="number" id="num2" placeholder="请输入">
+                        </div>
+                    </div>
+                    <button id="divine-number-btn" class="divine-btn">开始解卦</button>
+                </div>
+            </div>
+
+            <div class="result-section">
+                <div class="gua-display">
+                    <h3>本卦</h3>
+                    <p id="original-gua">请输入卦象</p>
+                </div>
+                <div class="gua-display">
+                    <h3>变卦</h3>
+                    <p id="changed-gua">请输入卦象</p>
+                </div>
+            </div>
+        </main>
+
+        <div id="result-panel" class="result-panel hidden">
+            <div class="result-content">
+                <button id="close-result" class="close-btn">&times;</button>
+                <h2>解卦结果</h2>
+                <div class="gua-names">
+                    <span id="result-original">本卦</span>
+                    <span class="arrow">→</span>
+                    <span id="result-changed">变卦</span>
+                </div>
+                <div class="ci-section">
+                    <h3>卦辞</h3>
+                    <p id="gua-ci"></p>
+                </div>
+                <div class="translation-section">
+                    <h3>译文</h3>
+                    <p id="gua-translation"></p>
+                </div>
+            </div>
+        </div>
+
+        <footer class="footer">
+            <p>焦氏易林解卦 · 仅供参考学习</p>
+            <div class="anti-counterfeit">
+                <div class="anti-counterfeit-text">
+                    <p>白渊国学社经占交流群<span class="highlight">上章</span>制作</p>
+                    <p>学习经占知识请关注白渊国学社公众号</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
